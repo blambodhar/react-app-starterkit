@@ -1,11 +1,11 @@
 {
-  "name": "webpack-starter",
+  "name": "react-app-starterkit",
   "version": "1.0.0",
-  "description": "",
+  "description": "Modern web development starter-kit using Webpack + React + ES6 + Babel app production build.",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/blambodhar/react-app-starterkit.git"
   },
   "scripts": {
     "start": "NODE_ENV=development npm-run-all --parallel test:watch open:src lint:watch",

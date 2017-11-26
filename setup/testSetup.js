@@ -7,7 +7,8 @@
  *  4. Sets up global vars that mimic a browser.
  *  5. Configure Enzyme for React.
  **===================================================================================*/
-
+import {configure} from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 
 
 /**!===================================================================================
@@ -66,6 +67,5 @@ global.navigator = {
 documentRef = document;  //eslint-disable-line no-undef
 
 // Configure Enzyme for React 16
-let Enzyme = require('enzyme');
-let Adapter = require('enzyme-adapter-react-16');
-Enzyme.configure({ adapter: new Adapter() });
+const adapter = new Adapter();
+configure({adapter});
